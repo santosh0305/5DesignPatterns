@@ -1,0 +1,6 @@
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\FactoryPattern\bin\Debug\FactoryPattern.exe.config
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\FactoryPattern\bin\Debug\FactoryPattern.exe
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\FactoryPattern\bin\Debug\FactoryPattern.pdb
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\FactoryPattern\obj\Debug\FactoryPattern.csprojResolveAssemblyReference.cache
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\FactoryPattern\obj\Debug\FactoryPattern.exe
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\FactoryPattern\obj\Debug\FactoryPattern.pdb

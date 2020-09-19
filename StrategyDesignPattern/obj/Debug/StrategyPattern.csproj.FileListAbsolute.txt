@@ -1,0 +1,5 @@
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\StrategyDesignPattern\bin\Debug\StrategyPattern.exe
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\StrategyDesignPattern\bin\Debug\StrategyPattern.pdb
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\StrategyDesignPattern\obj\Debug\StrategyPattern.csprojResolveAssemblyReference.cache
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\StrategyDesignPattern\obj\Debug\StrategyPattern.exe
+D:\SourceCode\Pluralsight - Design Patterns\Strategy\StrategyDesignPattern\obj\Debug\StrategyPattern.pdb
