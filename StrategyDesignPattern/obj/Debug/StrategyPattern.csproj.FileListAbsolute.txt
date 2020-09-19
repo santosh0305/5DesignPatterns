@@ -5,3 +5,6 @@ D:\SourceCode\Pluralsight - Design Patterns\Strategy\StrategyDesignPattern\obj\D
 D:\SourceCode\Pluralsight - Design Patterns\Strategy\StrategyDesignPattern\obj\Debug\StrategyPattern.pdb
 D:\SourceCode\5DesignPatterns\5DesignPatterns\StrategyDesignPattern\obj\Debug\StrategyPattern.exe
 D:\SourceCode\5DesignPatterns\5DesignPatterns\StrategyDesignPattern\obj\Debug\StrategyPattern.pdb
+D:\SourceCode\5DesignPatterns\5DesignPatterns\StrategyDesignPattern\bin\Debug\StrategyPattern.exe
+D:\SourceCode\5DesignPatterns\5DesignPatterns\StrategyDesignPattern\bin\Debug\StrategyPattern.pdb
+D:\SourceCode\5DesignPatterns\5DesignPatterns\StrategyDesignPattern\obj\Debug\StrategyPattern.csprojResolveAssemblyReference.cache
