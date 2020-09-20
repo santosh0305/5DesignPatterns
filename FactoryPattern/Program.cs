@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Threading;
 
 namespace FactoryPattern
 {
@@ -6,12 +6,16 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            AirConditioner
-                .InitializeFactories()
-                .ExecuteCreation(Actions.Warming, 22.5)
-                .Operate();
+            // Initialize all factories in system
+            var factories = AirConditioner.InitializeFactories();
 
-            Console.ReadLine();
+            factories.ExecuteCreation(Factories.Warming, 30).Operate();
+
+            Thread.Sleep(3000);
+
+            factories.ExecuteCreation(Factories.Cooling, 15.5).Operate();
+
+            Thread.Sleep(6000);
         }
     }
 }

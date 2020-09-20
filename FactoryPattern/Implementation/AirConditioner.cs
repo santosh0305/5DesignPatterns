@@ -5,25 +5,31 @@ namespace FactoryPattern
 {
     public class AirConditioner
     {
-        private readonly Dictionary<Actions, AirConditionerFactory> _factories;
-
+        private readonly Dictionary<Factories, AirConditionerFactory> factories = new Dictionary<Factories, AirConditionerFactory>();
+        // Dynamically get all factories based on 'FactoryPattern' factory text
         private AirConditioner()
         {
-            _factories = new Dictionary<Actions, AirConditionerFactory>();
+            var allFactoriesInSystem = Enum.GetValues(typeof(Factories));
 
-            foreach (Actions action in Enum.GetValues(typeof(Actions)))
+            foreach (Factories factory in allFactoriesInSystem)
             {
-                var factory = (AirConditionerFactory)Activator.CreateInstance(Type.GetType("FactoryPattern." + Enum.GetName(typeof(Actions), action) + "Factory"));
-                _factories.Add(action, factory);
+                var specificFactory = Enum.GetName(typeof(Factories), factory);
+                var factoryType = Type.GetType("FactoryPattern." + specificFactory + "Factory");
+                var currentFactory = (AirConditionerFactory) Activator.CreateInstance(factoryType);
+                factories.Add(factory, currentFactory);
             }
         }
-
-        public static AirConditioner InitializeFactories() => new AirConditioner();
-
-        public IAirConditioner ExecuteCreation(Actions action, double temperature) => _factories[action].Create(temperature);
+        public static AirConditioner InitializeFactories()
+        {
+            return new AirConditioner();
+        }
+        public IAirConditioner ExecuteCreation(Factories factory, double temperature)
+        {
+            return factories[factory].Create(temperature);
+        }
     }
 
-    public enum Actions
+    public enum Factories
     {
         Cooling,
         Warming
