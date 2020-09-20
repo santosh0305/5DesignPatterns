@@ -6,7 +6,8 @@ namespace FactoryMethod
     public class AirConditioner
     {
         private readonly Dictionary<Factories, AirConditionerFactory> factories = new Dictionary<Factories, AirConditionerFactory>();
-        // Dynamically get all factories based on 'FactoryPattern' factory text
+        
+        // Use Reflection : Dynamically get all factories based on 'FactoryPattern' factory text
         private AirConditioner()
         {
             var allFactoriesInSystem = Enum.GetValues(typeof(Factories));
@@ -15,6 +16,8 @@ namespace FactoryMethod
             {
                 var specificFactory = Enum.GetName(typeof(Factories), factory);
                 var factoryType = Type.GetType("FactoryMethod." + specificFactory + "Factory");
+
+                // Dynamically create instance for 'AirConditionerFactory' class
                 var currentFactory = (AirConditionerFactory) Activator.CreateInstance(factoryType);
                 factories.Add(factory, currentFactory);
             }
