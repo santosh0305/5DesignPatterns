@@ -1,4 +1,4 @@
-﻿namespace FactoryPattern
+﻿namespace FactoryMethod
 {
     #region Factory Abstract Class
     // this is Factory Abstract Class

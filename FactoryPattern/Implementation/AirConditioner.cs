@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FactoryPattern
+namespace FactoryMethod
 {
     public class AirConditioner
     {
@@ -14,7 +14,7 @@ namespace FactoryPattern
             foreach (Factories factory in allFactoriesInSystem)
             {
                 var specificFactory = Enum.GetName(typeof(Factories), factory);
-                var factoryType = Type.GetType("FactoryPattern." + specificFactory + "Factory");
+                var factoryType = Type.GetType("FactoryMethod." + specificFactory + "Factory");
                 var currentFactory = (AirConditionerFactory) Activator.CreateInstance(factoryType);
                 factories.Add(factory, currentFactory);
             }

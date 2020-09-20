@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FactoryPattern
+namespace FactoryMethod
 {
     #region Concrete Class 1
     // this is Concrete Class 1
