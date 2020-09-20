@@ -16,7 +16,7 @@ namespace FactoryMethod
 
         public void Operate()
         {
-            Console.WriteLine("COOLING FACTORY.......");
+            Console.WriteLine("Cooling Factory Invoked.......");
             Console.WriteLine($"Cooling : The room temperature is {_temperature} degrees");
         }
     }
