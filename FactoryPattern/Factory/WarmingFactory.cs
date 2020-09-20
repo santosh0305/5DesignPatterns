@@ -1,7 +1,7 @@
 ﻿namespace FactoryMethod
 {
-    #region Concrete creator classes
-    // this is concrete creator classes
+    #region ConcreteFactory
+    // Factory 2 inheriting Base Factory
     #endregion
     public class WarmingFactory : AirConditionerFactory
     {

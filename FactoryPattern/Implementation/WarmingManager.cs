@@ -2,8 +2,8 @@
 
 namespace FactoryMethod
 {
-    #region Concrete Class 2
-    // this is Concrete Class 2
+    #region FactoryImplementation2
+    // Implement Factory 2 functionality i.e. methods
     #endregion
     public class WarmingManager : IAirConditioner
     {
